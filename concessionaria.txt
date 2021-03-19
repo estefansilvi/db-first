@@ -1,0 +1,22 @@
+database = Autoconcessionario;
+tabella = Lista Auto;
+
+id_auto   PRIMARY_KEY     BIGINT        NOTNULL    AUTO_INCREMENT
+targa                     VARCHAR       NOTNULL
+marca                     VARCHAR       NOTNULL
+modello                   VARCHAR       NOTNULL
+tipologia                 VARCHAR       NOTNULL
+anno_immatricolazione     YEAR          NOTNULL
+telaio                    VARCHAR       NOTNULL
+colore                    VARCHAR       NULL
+posti                     TINYINT       NOTNULL
+porte                     TINYINT       NOTNULL
+lunghezza_mm              TINYINT       NOTNULL
+larghezza_mm              TINYINT       NOTNULL
+altezza_mm                TINYINT       NOTNULL
+usata                     TINYINT(1)    NOTNULL    DEFAULT 0
+carburante                VARCHAR       NOTNULL
+euro_auto                 VARCHAR       NOTNULL
+potenza                   VARCHAR       NOTNULL
+cambio                    VARCHAR       NOTNULL
+prezzo                    DOUBLE(8,2)   NOTNULL
